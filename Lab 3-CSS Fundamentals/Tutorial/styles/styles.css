@@ -1,0 +1,11 @@
+div.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+p{
+    flex: 1 200px;
+    padding-left:10px;
+    border-left: red solid 2px;
+    margin: 10px;
+    /*width: 200px;*/
+}
