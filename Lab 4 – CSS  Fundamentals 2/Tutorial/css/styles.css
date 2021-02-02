@@ -26,6 +26,7 @@
     color: white;
 }
 .box1{
+    border-style: ;
     grid-area: headerArea;
     background-color: red}
 .box2{
