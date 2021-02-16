@@ -123,46 +123,64 @@ console.error('This is error message')
 // console.log(second)
 // console.log(rest)
 
-function filter(x) {
-    return x.toLowerCase().startsWith('a')
-}
+// function filter(x) {
+//     return x.toLowerCase().startsWith('a')
+// }
+//
+//
+// let names = ['Abdulahi', 'mohamed', 'Mohamed', 'hassen', 'Hassen', 'ahmed']
+// names.sort((x, y) => y.localeCompare(x))
 
+// let namesStartWithA = names.filter(x => x.toLowerCase().startsWith('H'))
+// let namesLengthG6 = names.filter(x => x.length > 6)
+// console.log(namesLengthG6)
+//
+// let exist = names.find(x => x == 'Mohameduu')
+// console.log(exist)
+//
+// let mappedNames = names.map(x => ` ${x} has length of ${x.length} `)
+// console.log(mappedNames)
+//
+// let numbers = [2,4,5,226]
+//
+// function reduce(acc , value){
+//     return acc + value
+// }
+// let sum = numbers.reduce((acc, value)=> acc + value)
+// console.log('sum' , sum)
+//
+// // let max = numbers.reduce((preValue, value)=> {
+// //     if(preValue > value)
+// //         return preValue
+// //     return value
+// // })
+//
+//
+// max = numbers.reduce((preValue, currentValue)=> preValue > currentValue ?  preValue : currentValue)
+// console.log('max' , max)
 
-let names = ['Abdulahi', 'mohamed', 'Mohamed', 'hassen', 'Hassen', 'ahmed']
-names.sort((x, y) => y.localeCompare(x))
+let names = ['Abdulahi' , 'Hassen' , 'Ahmed']
+console.log(names)
 
-let namesStartWithA = names.filter(x => x.toLowerCase().startsWith('H'))
-let namesLengthG6 = names.filter(x => x.length > 6)
-console.log(namesLengthG6)
+//add end
+// names.push("Amana" , "Abeer")
+// console.log(names)
 
-let exist = names.find(x => x == 'Mohameduu')
-console.log(exist)
+//add beg
+names.unshift("Amana" , "Abeer")
+console.log(names)
 
-let mappedNames = names.map(x => ` ${x} has length of ${x.length} `)
-console.log(mappedNames)
+//rem end
+names.pop()
+console.log(names)
 
-let numbers = [2,4,5,226]
+//rev beg
+names.shift()
+console.log(names)
 
-function reduce(acc , value){
-    return acc + value
-}
-let sum = numbers.reduce((acc, value)=> acc + value)
-console.log('sum' , sum)
-
-// let max = numbers.reduce((preValue, value)=> {
-//     if(preValue > value)
-//         return preValue
-//     return value
-// })
-
-
-max = numbers.reduce((preValue, currentValue)=> preValue > currentValue ?  preValue : currentValue)
-console.log('max' , max)
-
-
-
-
-
+//remove specific number of elemes
+names.splice(1, 1)
+console.log(names)
 
 
 
