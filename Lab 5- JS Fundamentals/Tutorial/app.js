@@ -112,7 +112,7 @@ console.error('This is error message')
 //
 // console.table(evenMoreMixedArray)
 
-let names = ["Abdulahi" , "Hassen" , "Omar" , "Ahmed"]
+// let names = ["Abdulahi" , "Hassen" , "Omar" , "Ahmed"]
 // names.sort()
 // // let first = names[0]
 // // let second = names[1]
@@ -122,6 +122,42 @@ let names = ["Abdulahi" , "Hassen" , "Omar" , "Ahmed"]
 // console.log(first)
 // console.log(second)
 // console.log(rest)
+
+function filter(x) {
+    return x.toLowerCase().startsWith('a')
+}
+
+
+let names = ['Abdulahi', 'mohamed', 'Mohamed', 'hassen', 'Hassen', 'ahmed']
+names.sort((x, y) => y.localeCompare(x))
+
+let namesStartWithA = names.filter(x => x.toLowerCase().startsWith('H'))
+let namesLengthG6 = names.filter(x => x.length > 6)
+console.log(namesLengthG6)
+
+let exist = names.find(x => x == 'Mohameduu')
+console.log(exist)
+
+let mappedNames = names.map(x => ` ${x} has length of ${x.length} `)
+console.log(mappedNames)
+
+let numbers = [2,4,5,226]
+
+function reduce(acc , value){
+    return acc + value
+}
+let sum = numbers.reduce((acc, value)=> acc + value)
+console.log('sum' , sum)
+
+// let max = numbers.reduce((preValue, value)=> {
+//     if(preValue > value)
+//         return preValue
+//     return value
+// })
+
+
+max = numbers.reduce((preValue, currentValue)=> preValue > currentValue ?  preValue : currentValue)
+console.log('max' , max)
 
 
 
